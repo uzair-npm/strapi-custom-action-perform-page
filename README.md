@@ -31,7 +31,6 @@ To install and use the **Get Download Page Plugin** for your Strapi project:
 
 2. Enable the plugin by adding it to your Strapi configuration:
 In your Strapi project, navigate to config/plugins.js (create this file if it doesn't exist) and add the following configuration:
-```bash
 module.exports = ({ env }) => ({
   "get-download-page-plugin": {
     enabled: true,
