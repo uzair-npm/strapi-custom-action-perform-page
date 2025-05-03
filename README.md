@@ -32,9 +32,8 @@ To install and use the **Get Download Page Plugin** for your Strapi project:
 2. Enable the plugin by adding it to your Strapi configuration:
 In your Strapi project, navigate to config/plugins.js (create this file if it doesn't exist) and add the following configuration:
 module.exports = ({ env }) => ({
-  "get-download-page-plugin": {
+  "strapi-custom-action-perform-page": {
     enabled: true,
-    resolve: "./src/plugins/get-download-page-plugin",
     config: {
       title: 'Component Title',
       downloadButtons: [
@@ -69,9 +68,8 @@ npm run develop
 The plugin is configured via the Strapi plugin configuration. Here’s an example configuration:
 ```bash
 module.exports = ({ env }) => ({
-  "get-download-page-plugin": {
+  "strapi-custom-action-perform-page": {
     enabled: true,
-    resolve: "./src/plugins/get-download-page-plugin",
     config: {
       title: 'Component Title',
       downloadButtons: [
