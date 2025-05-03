@@ -1,6 +1,6 @@
 {
   "name": "strapi-custom-action-perform-page",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A configurable Strapi admin page to trigger custom actions via buttons linked to API endpoints.",
   "author": "Uzair Sayyed <uzairs9321@gmail.com>",
   "license": "MIT",
