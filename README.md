@@ -1,7 +1,7 @@
 # Custom Action Perform Page Plugin
 
-The Custom Action Perform Page Plugin for Strapi allows you to create a configurable page in the Strapi admin panel. This page displays a dropdown menu populated with options defined in the plugin configuration. Each option is linked to a specific API endpoint, and a customizable button allows users to trigger actions on those endpoints.
 ---
+#### The Custom Action Perform Page Plugin for Strapi allows you to create a configurable page in the Strapi admin panel. This page displays a dropdown menu populated with options defined in the plugin configuration. Each option is linked to a specific API endpoint, and a customizable button allows users to trigger actions on those endpoints.
 
 ## Features
 
@@ -113,3 +113,7 @@ module.exports = ({ env }) => ({
 ## Example Usage
 Once configured, go to the Get Download Page from the Strapi admin left sidebar. Select an option and click the custom download button to trigger the respective endpoint.
 
+### Make sure you give the permission to this Plugin
+
+
+![Enable permission](https://res.cloudinary.com/ddo593vrk/image/upload/v1746284982/tv6qkwaucuzxajrbqn9a.png)
