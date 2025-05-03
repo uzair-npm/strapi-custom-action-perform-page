@@ -1,0 +1,63 @@
+{
+  "name": "strapi-custom-action-perform-page",
+  "version": "0.0.3",
+  "description": "A configurable Strapi admin page to trigger custom actions via buttons linked to API endpoints.",
+  "author": "Uzair Sayyed <uzairs9321@gmail.com>",
+  "license": "MIT",
+  "keywords": ["strapi", "plugin", "custom", "admin", "action", "button"],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.23",
+    "@strapi/icons": "^2.0.0-rc.23",
+    "react-intl": "^7.1.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.12.7",
+    "prettier": "^3.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.17"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.17"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-custom-action-perform-page",
+    "displayName": "Custom Action Page",
+    "description": "Trigger custom API actions through the admin UI"
+  }
+}
